@@ -2,9 +2,10 @@
   "name": "restaurantwebpack",
   "version": "1.0.0",
   "description": "Building a site with webpack",
-  "private": true,
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/JimmyJimenez2400/restaurantPageWebPack#readme",
   "devDependencies": {
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.2",
     "webpack": "^5.81.0",
     "webpack-cli": "^5.0.2"
   }
