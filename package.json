@@ -1,0 +1,23 @@
+{
+  "name": "restaurantwebpack",
+  "version": "1.0.0",
+  "description": "Building a site with webpack",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimmyJimenez2400/restaurantPageWebPack.git"
+  },
+  "author": "Jimmy Jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JimmyJimenez2400/restaurantPageWebPack/issues"
+  },
+  "homepage": "https://github.com/JimmyJimenez2400/restaurantPageWebPack#readme",
+  "devDependencies": {
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2"
+  }
+}
