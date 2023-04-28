@@ -1,5 +1,9 @@
 import './style.css';
-const content = document.querySelector('#content');
+const body = document.querySelector('body');
+const content = document.createElement('div');
+content.setAttribute('id', 'content');
+
+body.appendChild(content);
 
 function navbar() {
   const element = document.createElement('nav');
