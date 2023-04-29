@@ -1,6 +1,8 @@
 import '../style.css';
-import navbar from '../navbar';
+import navbar from '../content/header/navbar';
 import toggleHambugerMenu from '../helpful_functions/toggleHamburgerMenu';
+import aboutCompany from '../content/main/about';
+import hero from '../content/main/hero';
 
 export default function pageLoad() {
   //Selecting Body and Create Content Element
@@ -22,7 +24,7 @@ export default function pageLoad() {
   function mainBody() {
     const mainContainer = document.createElement('main');
     mainContainer.setAttribute('id', 'mainContainer');
-
+    mainContainer.appendChild(hero());
     return mainContainer;
   }
 
