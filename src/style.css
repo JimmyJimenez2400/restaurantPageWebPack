@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 
 html,
@@ -75,17 +76,18 @@ a {
   flex: 1;
 }
 
-.imageHolder {
-  flex: 0 1 123px;
-  width: 100%;
+.left-side {
+
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .logoTitle {
   height: 100%;
-  width: 100%;
-
+  font-size: clamp(36px, 1rem, 60vw);
   text-align: center;
-  padding: 20px;
 
   display: flex;
   justify-content: center;
@@ -93,21 +95,32 @@ a {
 
   cursor: pointer;
 
-  border-bottom: 1px solid white;
 }
 
-.liElement-1 {
-  flex: 1;
+#toggle {
+  padding: 15px 25px;
 }
 
-.user-links {
+
+
+
+.not-active {
+  display: none;
+}
+
+
+.is_active {
   display: flex;
   flex-direction: column;
   flex: 2;
+  padding: 20px;
 }
 
+.is-active .liElement-1 {
+  flex: 1;
+}
 
-.user-links .userLink {
+.is-active .userLink {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,10 +128,10 @@ a {
   height: 100%;
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 
-.userLink:hover {
+.is-active .userLink:hover {
   background-color: red;
 }
 

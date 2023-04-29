@@ -1,25 +1,41 @@
 //Import Image
 import liElement from './helpful_functions/liElementMaker';
+import hamburgerMenu from './helpful_functions/hamburgerMaker';
 
 export default function navbar() {
   const sectionContainer = document.createElement('section');
   sectionContainer.setAttribute('id', 'navbarContainer');
 
   const navbarContainer = document.createElement('nav');
+  // Grab this for hamburger menu
   navbarContainer.setAttribute('class', 'navbar');
+  navbarContainer.setAttribute('role', 'navigation');
   sectionContainer.appendChild(navbarContainer);
 
-  const imageContainer = document.createElement('div');
-  imageContainer.setAttribute('class', 'imageHolder');
+  const left_side = document.createElement('section');
+  left_side.setAttribute('class', 'left-side');
+
+  const titleContainer = document.createElement('section');
+  titleContainer.setAttribute('class', 'titleContainer');
+
   const logoTitle = document.createElement('h1');
   logoTitle.setAttribute('class', 'logoTitle');
   logoTitle.textContent = 'Bondi';
 
-  imageContainer.appendChild(logoTitle);
-  navbarContainer.appendChild(imageContainer);
+  titleContainer.appendChild(logoTitle);
+
+  left_side.appendChild(titleContainer);
+
+  const buttonContainer = document.createElement('section');
+  buttonContainer.setAttribute('class', 'buttonContainer');
+
+  buttonContainer.appendChild(hamburgerMenu());
+  left_side.appendChild(buttonContainer);
+
+  navbarContainer.appendChild(left_side);
 
   const unorderListContainer = document.createElement('ul');
-  unorderListContainer.setAttribute('class', 'user-links');
+  unorderListContainer.setAttribute('class', 'not-active');
 
   navbarContainer.appendChild(unorderListContainer);
 
@@ -41,5 +57,3 @@ export default function navbar() {
 // ->->-> li * 4
 
 //make a function for hamburger menu
-
-function hamburgerMenu() {}
