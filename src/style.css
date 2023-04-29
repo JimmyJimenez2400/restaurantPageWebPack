@@ -7,7 +7,7 @@
 
 html,
 body {
-  background-color: black;
+
   color: white;
   height: 100%;
   width: 100%;
@@ -24,16 +24,26 @@ ul {
 a {
   cursor: pointer;
   text-decoration: none;
+  color: white;
+}
+
+img {
+  height: auto;
+  width: 100%;
 }
 
 #content {
   height: 100%;
   width: 100%;
-  background-color: black;
   color: white;
 
   display: flex;
   flex-direction: column;
+
+  background-image: url('./images/backgroundPhoto.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #content>* {
@@ -45,21 +55,19 @@ a {
   justify-content: center;
   flex-direction: column;
   flex: 0 1 100px;
-  background-color: red;
+  background: transparent;
 }
 
 #mainContainer {
-  background-color: blue;
+
   flex: 2;
 }
 
-#footerContainer {
-  background-color: pink;
-}
+#footerContainer {}
 
 #navbarContainer {
   flex: 1;
-  background-color: black;
+  background: transparent;
   display: flex;
   justify-content: center;
 }
@@ -67,8 +75,19 @@ a {
 .navbar {
   flex: 1;
   display: flex;
+  position: relative;
   flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
 
+.navbar ul {
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  right: 0px;
+
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 
@@ -98,6 +117,7 @@ a {
 }
 
 #toggle {
+  height: 100%;
   padding: 15px 25px;
 }
 
@@ -110,10 +130,12 @@ a {
 
 
 .is_active {
+
+  top: 400px;
   display: flex;
   flex-direction: column;
   flex: 2;
-  padding: 20px;
+  padding-bottom: 20px;
 }
 
 .is-active .liElement-1 {
@@ -129,10 +151,36 @@ a {
   width: 100%;
   text-align: center;
   border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 .is-active .userLink:hover {
   background-color: red;
+}
+
+#mainContainer {
+  flex: 2;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+#heroContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  flex: 1;
+
+}
+
+.aboutCompany {
+  height: 100%;
+  flex: 1;
+  background-color: pink;
 }
 
 /* 
