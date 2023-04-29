@@ -12,8 +12,119 @@ body {
   width: 100%;
 }
 
+body {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 #content {
   height: 100%;
-  background-color: red;
+  width: 100%;
+  background-color: black;
   color: white;
+
+  display: flex;
+  flex-direction: column;
 }
+
+#content>* {
+  flex: 1;
+}
+
+#headerContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 0 1 100px;
+  background-color: red;
+}
+
+#mainContainer {
+  background-color: blue;
+  flex: 2;
+}
+
+#footerContainer {
+  background-color: pink;
+}
+
+#navbarContainer {
+  flex: 1;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.navbar>* {
+  flex: 1;
+}
+
+.imageHolder {
+  flex: 0 1 123px;
+  width: 100%;
+}
+
+.logoTitle {
+  height: 100%;
+  width: 100%;
+
+  text-align: center;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid white;
+}
+
+.liElement-1 {
+  flex: 1;
+}
+
+.user-links {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+
+.user-links .userLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.userLink:hover {
+  background-color: red;
+}
+
+/* 
+@media(hover:hover) and (pointer: fine) {
+  .userLink:hover {
+    background-color: red;
+  }
+} */
