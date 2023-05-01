@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,10 @@
   "bugs": {
     "url": "https://github.com/JimmyJimenez2400/restaurantPageWebPack/issues"
   },
-  "homepage": "https://github.com/JimmyJimenez2400/restaurantPageWebPack#readme",
+  "homepage": "https://github.com/JimmyJimenez2400/restaurantPageWebPack",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.1",
     "style-loader": "^3.3.2",
     "webpack": "^5.81.0",
