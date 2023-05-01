@@ -25,6 +25,7 @@ export default function pageLoad() {
     const mainContainer = document.createElement('main');
     mainContainer.setAttribute('id', 'mainContainer');
     mainContainer.appendChild(hero());
+    mainContainer.appendChild(aboutCompany());
     return mainContainer;
   }
 

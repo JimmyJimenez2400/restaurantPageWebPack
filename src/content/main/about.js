@@ -7,5 +7,12 @@ export default function aboutCompany() {
 
   aboutContainer.appendChild(about);
 
+  const leftSideText = document.createElement('article');
+  const rightSideImg = document.createElement('section');
+
+  about.appendChild(leftSideText);
+  about.appendChild(rightSideImg);
+
+  
   return aboutContainer;
 }

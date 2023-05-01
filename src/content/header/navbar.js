@@ -13,7 +13,9 @@ export default function navbar() {
   sectionContainer.appendChild(navbarContainer);
 
   const left_side = document.createElement('section');
+  const right_side = document.createElement('section');
   left_side.setAttribute('class', 'left-side');
+  right_side.setAttribute('class', 'right-side');
 
   const titleContainer = document.createElement('section');
   titleContainer.setAttribute('class', 'titleContainer');
@@ -30,15 +32,15 @@ export default function navbar() {
   buttonContainer.setAttribute('class', 'buttonContainer');
 
   buttonContainer.appendChild(hamburgerMenu());
-  left_side.appendChild(buttonContainer);
+  right_side.appendChild(buttonContainer);
 
   navbarContainer.appendChild(left_side);
+  navbarContainer.appendChild(right_side);
 
   const unorderListContainer = document.createElement('ul');
   unorderListContainer.setAttribute('class', 'not-active');
 
-  navbarContainer.appendChild(unorderListContainer);
-
+  right_side.appendChild(unorderListContainer);
   unorderListContainer.appendChild(
     liElement('HOME', 'liElement', 'userLink', '#')
   );
@@ -49,7 +51,7 @@ export default function navbar() {
     liElement('MENU', 'liElement', 'userLink', '#')
   );
   unorderListContainer.appendChild(
-    liElement('CONTACT', 'liElement', 'userLink')
+    liElement('CONTACT', 'liElement', 'userLink', '#')
   );
 
   return sectionContainer;

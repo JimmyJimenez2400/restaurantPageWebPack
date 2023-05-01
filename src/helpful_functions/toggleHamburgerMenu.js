@@ -11,11 +11,15 @@ export default function toggleHambugerMenu() {
       menu;
       menu.classList.add('not-active');
       menu.classList.remove('is-active');
+      hamburgerButton.textContent = 'menu';
+      hamburgerButton.style.backgroundColor = '#53917E';
       return;
     } else {
       console.log('NOT FOUND');
       menu.classList.remove('not-active');
       menu.classList.add('is-active');
+      hamburgerButton.textContent = 'close';
+      hamburgerButton.style.backgroundColor = `#6D1A36`;
       this.setAttribute('aria-expanded', 'true');
       return;
     }
