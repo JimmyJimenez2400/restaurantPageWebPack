@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/JimmyJimenez2400/restaurantPageWebPack/issues"
   },
-  "homepage": "https://github.com/JimmyJimenez2400/restaurantPageWebPack",
+  "homepage": "https://github.com/JimmyJimenez2400/restaurantPageWebPack#readme",
   "devDependencies": {
     "css-loader": "^6.7.3",
     "gh-pages": "^5.0.0",
